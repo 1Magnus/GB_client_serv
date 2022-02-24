@@ -4,10 +4,6 @@
 
 words = ['class', 'function', 'method']
 for i in words:
-    print('содержимое - ', i)
-    print('тип - ', type(i))
-    print('длина - ', len(i))
+    print(f'содержимое - {i}, тип - {type(i)}, длина - {len(i)}')
     result = eval(f'b"{i}"')
-    print('содержимое - ', result)
-    print('тип - ', type(result))
-    print('длина - ', len(result))
+    print(f'содержимое - {result}, тип - {type(result)}, длина - {len(result)}')
