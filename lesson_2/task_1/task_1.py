@@ -36,4 +36,6 @@ def write_to_csv(file_path):
 
 
 if __name__ == '__main__':
-    write_to_csv(r'F:\GB_client_serv\lesson_2\task_1\DATA.csv')
+    # write_to_csv(r'F:\GB_client_serv\lesson_2\task_1\DATA.csv')
+    write_to_csv('DATA.csv')
+
