@@ -1,0 +1,9 @@
+items:
+- a
+- b
+- c
+items_price:
+  a: 100€
+  b: 200€
+  c: 300€
+quantity: 4
