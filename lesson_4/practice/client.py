@@ -59,10 +59,9 @@ def check_commond_argv():
         sys.exit(1)
 
 
-
 def main():
     '''Загружаем параметы коммандной строки'''
-
+    server_address, server_port = check_commond_argv()
 
     # Инициализация сокета и обмен
 
