@@ -3,9 +3,8 @@
 import sys
 import os
 import logging
-sys.path.append(os.path.join(os.getcwd(), '..'))
 from common.variables import LOGGING_LEVEL
-sys.path.append('../../')
+sys.path.append('../')
 
 # создаём формировщик логов (formatter):
 CLIENT_FORMATTER = logging.Formatter('%(asctime)s %(levelname)s %(filename)s %(message)s')
@@ -31,6 +30,5 @@ LOGGER.setLevel(LOGGING_LEVEL)
 if __name__ == '__main__':
     LOGGER.critical('Критическая ошибка')
     LOGGER.error('Ошибка')
-    LOGGER.info('Информационное сообщение')
     LOGGER.debug('Отладочная информация')
-
+    LOGGER.info('Информационное сообщение')
