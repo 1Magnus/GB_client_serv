@@ -4,6 +4,7 @@ import logs.config_server_log
 import logs.config_client_log
 
 
+
 def log(func_to_log):
     """Функция-декоратор"""
 
