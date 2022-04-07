@@ -32,11 +32,13 @@ def ping(ip, flag=False):
     if reply.wait() == 0:
         if not flag:
             print(f'{ip} - Узел доступен')
-        available['Доступен'] += f'{ip}\n'
+        else:
+            available['Доступен'] += f'{ip}\n'
     else:
         if not flag:
             print(f'{ip} - Узел недоступен')
-        not_available['Недоступен'] += f'{ip}\n'
+        else:
+            not_available['Недоступен'] += f'{ip}\n'
 
 
 def host_ping(list_ip, flag=False):
@@ -92,6 +94,4 @@ if __name__ == '__main__':
     # default_list_ip = ['192.168.1.1', 'yandex.ru', '8.8.8.8', 'aaaa', '12', ]
     # host_ping(default_list_ip)
     host_range_ping()
-    available = {'Доступен': '', }
-    not_available = {'Недоступен': '', }
     host_range_ping_tab()
